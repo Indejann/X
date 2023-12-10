@@ -5,23 +5,44 @@
   <style>
     body {
       background-color: lavenderblush; /* Hell lila Hintergrundfarbe */
-      text-align: center;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
     }
 
-    input[type="text"] {
-      width: 300px;
-      padding: 10px;
-      margin-top: 20px;
+    .search-bar {
+      width: 70%;
+      padding: 15px;
+      margin: 20px auto;
+      font-size: 24px; /* Größere Schrift für die Suchleiste */
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      display: block;
     }
 
-    .button {
+    .search-button {
       display: inline-block;
-      padding: 15px 30px;
-      margin: 20px 10px;
+      padding: 20px;
+      margin: 20px;
       border-radius: 10px;
       transition: transform 0.3s ease-in-out;
+      font-size: 24px; /* Größere Schrift für die Buttons */
       font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      line-height: 110px;
     }
 
     #youtube {
@@ -40,21 +61,19 @@
       background-color: #00CED1; /* X.net Türkis */
     }
 
-    .button:hover {
+    .search-button:hover {
       transform: scale(1.1);
     }
   </style>
 </head>
 <body>
 
-<input type="text" placeholder="Google Suche">
+<input type="text" class="search-bar" placeholder="Suche...">
 
-<div>
-  <a href="https://www.youtube.com/" class="button" id="youtube">YouTube</a>
-  <a href="https://music.youtube.com/" class="button" id="youtubemusic">YouTube Music</a>
-  <a href="https://www.twitch.tv/" class="button" id="twitch">Twitch</a>
-  <a href="https://x.net/" class="button" id="xnet">X.net</a>
-</div>
+<a href="https://www.youtube.com/" class="search-button" id="youtube">YouTube</a>
+<a href="https://music.youtube.com/" class="search-button" id="youtubemusic">YouTube Music</a>
+<a href="https://www.twitch.tv/" class="search-button" id="twitch">Twitch</a>
+<a href="https://x.net/" class="search-button" id="xnet">X.net</a>
 
 </body>
 </html>

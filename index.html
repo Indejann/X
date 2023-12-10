@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Weiterleitung zu YouTube</title>
+  <title>Meine coole Seite</title>
+  <style>
+    body {
+      background-color: lavenderblush; /* Hell lila Hintergrundfarbe */
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 20px 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      font-weight: bold;
+    }
+
+    #youtube {
+      background-color: #FF0000; /* YouTube-Rot */
+    }
+
+    #youtubemusic {
+      background-color: #FFD700; /* YouTube Music Gelb */
+    }
+
+    #twitch {
+      background-color: #6441A4; /* Twitch-Lila */
+    }
+
+    #xnet {
+      background-color: #00CED1; /* X.net Türkis */
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
 
-<p>Klicke auf den folgenden Link, um zu YouTube weitergeleitet zu werden:</p>
-<a href="https://www.youtube.com/">Zu YouTube gehen</a>
+<input type="text" placeholder="Google Suche">
+
+<div>
+  <a href="https://www.youtube.com/" class="button" id="youtube">YouTube</a>
+  <a href="https://music.youtube.com/" class="button" id="youtubemusic">YouTube Music</a>
+  <a href="https://www.twitch.tv/" class="button" id="twitch">Twitch</a>
+  <a href="https://x.net/" class="button" id="xnet">X.net</a>
+</div>
 
 </body>
 </html>
